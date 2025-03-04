@@ -27,12 +27,13 @@ public class Main {
         int lowestTemp = 25;
         int highestTemp = isSummer ? 45 : 35;
 
-        return temp < highestTemp && temp > lowestTemp;
+        return temp >= lowestTemp && temp <= highestTemp;
     }
+
 
     public static double area(double width, double height) {
        if(width < 0 || height < 0) {
-           System.out.println("width veya height sıfırdan küçük olamaz!! Width:" + width + "Height:"+ height);
+           System.out.println("width veya height sıfırdan küçük olamaz!! Width:" + width + " Height:"+ height);
            return -1;
        }
        return width*height;
